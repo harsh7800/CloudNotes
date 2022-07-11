@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Roboto+Slab:wght@500&family=Varela+Round&display=swap");
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100vw;
+  font-family: "Kanit", cursive;
+  h4 {
+    margin-left: 3%;
+    font-size: 2em;
+  }
+  .navbar-container {
+    margin-right: 5%;
+    .navlinks {
+      text-decoration: none;
+      font-size: 1.3em;
+      color: black;
+      margin-right: 30px;
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: rgba(0, 0, 0, 0.465);
+        transition: all 0.2s ease-in;
+      }
+    }
+    .active{
+      color: rgb(224, 145, 48);
+    }
+    button {
+      background: none;
+      width: 120px;
+      height: 40px;
+      margin-left: 20px;
+      border-radius: 25px;
+      font-size: 1.3em;
+      transition: all 0.2s ease-in;
+      &:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+  #hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100vw;
+    font-family: "Kanit", cursive;
+    h4 {
+      margin-left: 3%;
+      font-size: 1.5em;
+    }
+    .navbar-container {
+      margin-right: 5%;
+      #navlinks {
+        text-decoration: none;
+        font-size: 1.3em;
+        color: black;
+        margin-right: 15px;
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: rgba(0, 0, 0, 0.465);
+          transition: all 0.2s ease-in;
+        }
+      }
+      button {
+        background: none;
+        width: 100px;
+        height: 40px;
+        margin-left: 10px;
+        border-radius: 25px;
+        font-size: 1.3em;
+        transition: all 0.2s ease-in;
+        &:hover {
+          background-color: black;
+          color: white;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+    #hamburger {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100vw;
+    font-family: "Kanit", cursive;
+    position: relative;
+    h4 {
+      margin-left: 3%;
+      font-size: 1.5em;
+    }
+    .navbar-container {
+      position: absolute;
+      left: 100%;
+      transition: left .4s ease-in;
+      top: 0%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      margin-right: 5%;
+      height: 50em;
+      width: 80vw;
+      border-radius: 15px;
+      align-items: center;
+      z-index: 1000;
+      #navlinks {
+        margin-top: 80px;
+        margin-left: 50px;
+        text-decoration: none;
+        font-size: 1.3em;
+        color: black;
+        margin-right: 30px;
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: rgba(0, 0, 0, 0.465);
+          transition: all 0.2s ease-in;
+        }
+      }
+      button {
+        margin-top: 80px;
+        background: none;
+        width: 120px;
+        height: 40px;
+        margin-left: 20px;
+        border-radius: 25px;
+        font-size: 1.3em;
+        transition: all 0.2s ease-in;
+        &:hover {
+          background-color: black;
+          color: white;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+    .navbar-container.show {
+      position: absolute;
+      left: 20%;
+      top: 0%;
+      transition: left .4s ease-in;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      margin-right: 5%;
+      height: 50em;
+      width: 80vw;
+      border-radius: 15px;
+      align-items: center;
+      z-index: 1000;
+      #navlinks {
+        margin-top: 80px;
+        margin-left: 50px;
+        text-decoration: none;
+        font-size: 1.3em;
+        color: black;
+        margin-right: 30px;
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: rgba(0, 0, 0, 0.465);
+          transition: all 0.2s ease-in;
+        }
+      }
+      button {
+        margin-top: 80px;
+        background: none;
+        width: 120px;
+        height: 40px;
+        margin-left: 20px;
+        border-radius: 25px;
+        font-size: 1.3em;
+        transition: all 0.2s ease-in;
+        &:hover {
+          background-color: black;
+          color: white;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+    #hamburger {
+      display: block;
+      font-size: 1.7em;
+      margin-right: 20px;
+      z-index: 9999;
+    }
+  }
+}
